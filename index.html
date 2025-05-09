@@ -4,58 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gabriel Dantas | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Inter', sans-serif;
     }
 
     body {
-      background: #0f0f0f;
-      color: #f2f2f2;
+      background: #0f172a;
+      color: #f1f5f9;
       line-height: 1.6;
     }
 
     header {
-      background: #111827;
+      background: linear-gradient(90deg, #0ea5e9, #3b82f6);
       padding: 2rem 1rem;
       text-align: center;
+      color: white;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #60a5fa;
+      font-size: 2.8rem;
+      font-weight: 800;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #cbd5e1;
     }
 
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
       padding: 2rem 1rem;
     }
 
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #38bdf8;
-      border-bottom: 2px solid #38bdf8;
-      display: inline-block;
+      border-left: 4px solid #3b82f6;
+      padding-left: 0.5rem;
       margin-bottom: 1rem;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      color: #e2e8f0;
     }
 
     ul {
       list-style: disc;
-      margin-left: 1.5rem;
+      padding-left: 2rem;
     }
 
     .tech-badges span {
@@ -65,15 +72,16 @@
       margin: 0.25rem;
       display: inline-block;
       color: #facc15;
-      font-weight: bold;
+      font-weight: 600;
+      box-shadow: 0 0 8px #facc15aa;
     }
 
     .contact a {
       display: inline-block;
-      margin: 0.5rem;
+      margin: 0.5rem 1rem 0.5rem 0;
       color: #3b82f6;
       text-decoration: none;
-      transition: 0.3s;
+      font-weight: 600;
     }
 
     .contact a:hover {
@@ -83,16 +91,31 @@
     footer {
       text-align: center;
       padding: 2rem;
-      background: #111827;
+      background: #1e293b;
       color: #94a3b8;
+      font-size: 0.9rem;
     }
 
     .lang-stats {
-      white-space: pre;
       font-family: monospace;
-      background: #1e1e2f;
+      background: #1e293b;
       padding: 1rem;
       border-radius: 8px;
+      white-space: pre;
+      overflow-x: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -108,7 +131,8 @@
       <p>
         Sou estudante de Engenharia de Software, atualmente aprendendo Banco de Dados,
         Fundamentos de Engenharia, Introdução à Computação e Lógica de Programação.
-        Tenho interesse em programação com C# e análise de dados com Power BI.
+        Tenho interesse em programação com C# e análise de dados com Power BI. Estou em constante evolução,
+        buscando me aprofundar no universo da tecnologia.
       </p>
     </section>
 
@@ -119,25 +143,38 @@
         <span>Power BI</span>
         <span>Git</span>
         <span>VS Code</span>
+        <span>SQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Galeria com IA</h2>
+      <p>Imagens inspiradas por inteligência artificial (exemplos ilustrativos):</p>
+      <div class="gallery">
+        <img src="https://source.unsplash.com/featured/?artificialintelligence" alt="IA 1" />
+        <img src="https://source.unsplash.com/featured/?machinelearning" alt="IA 2" />
+        <img src="https://source.unsplash.com/featured/?technology" alt="IA 3" />
       </div>
     </section>
 
     <section>
       <h2>Estatísticas de Linguagens</h2>
       <div class="lang-stats">
-C#         ██████████████████░░░░░░ 70%  
-Power BI   ███████████░░░░░░░░░░ 50%  
-SQL        ██████████░░░░░░░░░░ 40%  
-HTML/CSS   ███████░░░░░░░░░░░░ 30%  
-Python     ████░░░░░░░░░░░░░░░ 20%
+C#         ███████████████░░░░░░░░ 70%  
+Power BI   ██████████░░░░░░░░░░░░ 50%  
+SQL        █████████░░░░░░░░░░░░░ 40%  
+HTML/CSS   ███████░░░░░░░░░░░░░░░ 30%  
+Python     ████░░░░░░░░░░░░░░░░░░ 20%
       </div>
     </section>
 
     <section>
       <h2>Contato</h2>
       <div class="contact">
-        <a href="mailto:bielhr01@gmail.com">📧 bielhr01@gmail.com</a><br>
-        <a href="https://www.linkedin.com/in/gabriel-henrique-rodrigues-dantas-9b6ab8364" target="_blank">💼 LinkedIn</a><br>
+        <a href="mailto:bielhr01@gmail.com">📧 Email</a>
+        <a href="https://www.linkedin.com/in/gabriel-henrique-rodrigues-dantas-9b6ab8364" target="_blank">💼 LinkedIn</a>
         <a href="https://www.instagram.com/dantasz.sw" target="_blank">📷 Instagram</a>
       </div>
     </section>
@@ -157,3 +194,4 @@ Python     ████░░░░░░░░░░░░░░░ 20%
   </footer>
 </body>
 </html>
+
