@@ -1,9 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Gabriel Dantas, estudante de Engenharia de Software especializado em Banco de Dados, Desenvolvimento de Software, IA e Ciência de Dados." />
+  <meta name="keywords" content="Gabriel Dantas, Engenharia de Software, IA, Ciência de Dados, Banco de Dados, Desenvolvimento Web, Portfólio" />
+  <meta name="author" content="Gabriel Dantas" />
   <title>Gabriel Dantas | Portfólio</title>
+  <link rel="canonical" href="https://github.com/dantasz15" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -17,30 +21,31 @@
     }
 
     body {
-      background: #1c1c1c;
-      color: #f1f5f9;
+      background: #121212;
+      color: #f8f9fa;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, #FF4B2B, #FF416C);
+      background: linear-gradient(135deg, #FF4B2B, #FF416C);
       padding: 3rem 1rem;
       text-align: center;
       color: white;
+      border-bottom: 5px solid #ff6b6b;
     }
 
     header h1 {
       font-size: 3rem;
       font-weight: 800;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
 
     main {
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
       padding: 3rem 1rem;
     }
@@ -50,11 +55,11 @@
     }
 
     h2 {
-      font-size: 2.5rem;
-      color: #FF6B6B;
+      font-size: 2.25rem;
+      color: #ff6b6b;
       border-left: 6px solid #FF416C;
       padding-left: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     p, li {
@@ -67,15 +72,19 @@
       padding-left: 2rem;
     }
 
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
     .tech-badges span {
-      background: #2c3e50;
-      padding: 0.8rem 1.5rem;
-      border-radius: 20px;
-      margin: 0.5rem;
-      display: inline-block;
+      background: #212529;
+      padding: 0.8rem 1.2rem;
+      border-radius: 9999px;
       color: #f1c40f;
-      font-weight: 700;
-      box-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(241, 196, 15, 0.3);
     }
 
     .contact a {
@@ -84,6 +93,7 @@
       color: #00BFFF;
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.3s ease;
     }
 
     .contact a:hover {
@@ -93,19 +103,24 @@
     footer {
       text-align: center;
       padding: 2rem;
-      background: #1c1c1c;
-      color: #94a3b8;
+      background: #0d0d0d;
+      color: #adb5bd;
       font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00BFFF;
+      text-decoration: none;
     }
 
     .lang-stats {
       font-family: monospace;
-      background: #2c3e50;
+      background: #212529;
       padding: 1.5rem;
       border-radius: 10px;
-      white-space: pre;
       overflow-x: auto;
       margin-top: 2rem;
+      color: #f8f9fa;
     }
 
     .gallery {
@@ -117,8 +132,13 @@
 
     .gallery img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -268,3 +288,4 @@
   </footer>
 </body>
 </html>
+
