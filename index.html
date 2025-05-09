@@ -16,47 +16,48 @@
     }
 
     body {
-      background: #0f172a;
+      background: #1c1c1c;
       color: #f1f5f9;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, #0ea5e9, #3b82f6);
-      padding: 2rem 1rem;
+      background: linear-gradient(90deg, #FF4B2B, #FF416C);
+      padding: 3rem 1rem;
       text-align: center;
       color: white;
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       font-weight: 800;
+      margin-bottom: 1rem;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     main {
       max-width: 960px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
 
     h2 {
-      font-size: 2rem;
-      color: #38bdf8;
-      border-left: 4px solid #3b82f6;
-      padding-left: 0.5rem;
+      font-size: 2.5rem;
+      color: #FF6B6B;
+      border-left: 6px solid #FF416C;
+      padding-left: 1rem;
       margin-bottom: 1rem;
     }
 
     p, li {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       color: #e2e8f0;
     }
 
@@ -66,56 +67,57 @@
     }
 
     .tech-badges span {
-      background: #1e293b;
-      padding: 0.5rem 1rem;
-      border-radius: 999px;
-      margin: 0.25rem;
+      background: #2c3e50;
+      padding: 0.8rem 1.5rem;
+      border-radius: 20px;
+      margin: 0.5rem;
       display: inline-block;
-      color: #facc15;
-      font-weight: 600;
-      box-shadow: 0 0 8px #facc15aa;
+      color: #f1c40f;
+      font-weight: 700;
+      box-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
     }
 
     .contact a {
       display: inline-block;
-      margin: 0.5rem 1rem 0.5rem 0;
-      color: #3b82f6;
+      margin: 1rem 1.5rem;
+      color: #00BFFF;
       text-decoration: none;
       font-weight: 600;
     }
 
     .contact a:hover {
-      color: #facc15;
+      color: #FF6B6B;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
-      background: #1e293b;
+      background: #1c1c1c;
       color: #94a3b8;
       font-size: 0.9rem;
     }
 
     .lang-stats {
       font-family: monospace;
-      background: #1e293b;
-      padding: 1rem;
-      border-radius: 8px;
+      background: #2c3e50;
+      padding: 1.5rem;
+      border-radius: 10px;
       white-space: pre;
       overflow-x: auto;
+      margin-top: 2rem;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
 
     .gallery img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -129,29 +131,31 @@
     <section>
       <h2>Sobre Mim</h2>
       <p>
-        Sou estudante de Engenharia de Software, atualmente aprendendo Banco de Dados,
-        Fundamentos de Engenharia, Introdução à Computação e Lógica de Programação.
-        Tenho interesse em programação com C# e análise de dados com Power BI. Estou em constante evolução,
-        buscando me aprofundar no universo da tecnologia.
+        Sou estudante de Engenharia de Software e estou em constante aprendizado nas áreas de Banco de Dados, Fundamentos de Engenharia, Introdução à Computação e Lógica de Programação.
+        Com foco em aprender tecnologias de ponta, estou me aprofundando em linguagens como C# e ferramentas como Power BI, com o objetivo de aplicar minhas habilidades no mercado de trabalho.
+        Tenho grande interesse na evolução da tecnologia e busco estar à frente em áreas como Inteligência Artificial, Big Data, e Desenvolvimento de Software.
       </p>
     </section>
 
     <section>
-      <h2>Tecnologias</h2>
+      <h2>Tecnologias e Ferramentas</h2>
       <div class="tech-badges">
         <span>C#</span>
         <span>Power BI</span>
         <span>Git</span>
-        <span>VS Code</span>
         <span>SQL</span>
+        <span>VS Code</span>
         <span>HTML</span>
         <span>CSS</span>
+        <span>Python</span>
+        <span>Azure</span>
+        <span>Node.js</span>
       </div>
     </section>
 
     <section>
-      <h2>Galeria com IA</h2>
-      <p>Imagens inspiradas por inteligência artificial (exemplos ilustrativos):</p>
+      <h2>Galeria de IA</h2>
+      <p>Imagens criadas com IA, retratando a evolução tecnológica e sua influência no mundo moderno:</p>
       <div class="gallery">
         <img src="https://source.unsplash.com/featured/?artificialintelligence" alt="IA 1" />
         <img src="https://source.unsplash.com/featured/?machinelearning" alt="IA 2" />
@@ -162,11 +166,11 @@
     <section>
       <h2>Estatísticas de Linguagens</h2>
       <div class="lang-stats">
-C#         ███████████████░░░░░░░░ 70%  
-Power BI   ██████████░░░░░░░░░░░░ 50%  
-SQL        █████████░░░░░░░░░░░░░ 40%  
-HTML/CSS   ███████░░░░░░░░░░░░░░░ 30%  
-Python     ████░░░░░░░░░░░░░░░░░░ 20%
+        C#         ███████████████░░░░░░░░ 75%  <br>
+        Power BI   ██████████░░░░░░░░░░░░░ 60%  <br>
+        SQL        █████████░░░░░░░░░░░░░░ 50%  <br>
+        HTML/CSS   ███████░░░░░░░░░░░░░░░ 40%  <br>
+        Python     ████░░░░░░░░░░░░░░░░░░ 30%  <br>
       </div>
     </section>
 
@@ -183,14 +187,15 @@ Python     ████░░░░░░░░░░░░░░░░░░ 20
       <h2>Curiosidades</h2>
       <ul>
         <li>🎯 Focado em construir uma base sólida como desenvolvedor.</li>
-        <li>💡 Interesse por dados e visualização com Power BI.</li>
-        <li>🌱 Sempre buscando aprender algo novo.</li>
+        <li>💡 Interesse por dados, visualização com Power BI e Machine Learning.</li>
+        <li>🌱 Sempre buscando aprender algo novo, especialmente sobre Inteligência Artificial.</li>
+        <li>🔍 Fascinado pela evolução da tecnologia e seu impacto nas empresas.</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    Feito com ❤️ por Gabriel Dantas | GitHub: <a href="https://github.com/dantasz15" style="color:#3b82f6">@dantasz15</a>
+    Feito com ❤️ por Gabriel Dantas | GitHub: <a href="https://github.com/dantasz15" style="color:#00BFFF">@dantasz15</a>
   </footer>
 </body>
 </html>
