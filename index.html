@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     * {
       margin: 0;
@@ -131,9 +132,8 @@
     <section>
       <h2>Sobre Mim</h2>
       <p>
-        Sou estudante de Engenharia de Software e estou em constante aprendizado nas áreas de Banco de Dados, Fundamentos de Engenharia, Introdução à Computação e Lógica de Programação.
-        Com foco em aprender tecnologias de ponta, estou me aprofundando em linguagens como C# e ferramentas como Power BI, com o objetivo de aplicar minhas habilidades no mercado de trabalho.
-        Tenho grande interesse na evolução da tecnologia e busco estar à frente em áreas como Inteligência Artificial, Big Data, e Desenvolvimento de Software.
+        Sou estudante de Engenharia de Software e estou me especializando nas áreas de Banco de Dados, Desenvolvimento de Software, Inteligência Artificial e Ciência de Dados.
+        Além disso, estou aprendendo ferramentas como C#, Power BI e SQL, com o objetivo de atuar em empresas de tecnologia, desenvolvimento web e análise de dados.
       </p>
     </section>
 
@@ -150,12 +150,80 @@
         <span>Python</span>
         <span>Azure</span>
         <span>Node.js</span>
+        <span>React</span>
+        <span>Docker</span>
+        <span>AWS</span>
       </div>
     </section>
 
     <section>
+      <h2>Gráficos de Linguagens de Programação</h2>
+      <canvas id="langChart" width="400" height="200"></canvas>
+      <script>
+        const ctx = document.getElementById('langChart').getContext('2d');
+        const langChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['C#', 'Power BI', 'SQL', 'HTML/CSS', 'Python'],
+            datasets: [{
+              label: 'Horas de Estudo (Semanais)',
+              data: [15, 10, 12, 8, 6],  // Dados fictícios de horas de estudo
+              backgroundColor: '#FF416C',
+              borderColor: '#FF4B2B',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+    </section>
+
+    <section>
+      <h2>Gráfico de Crescimento das Tecnologias</h2>
+      <canvas id="growthChart" width="400" height="200"></canvas>
+      <script>
+        const ctxGrowth = document.getElementById('growthChart').getContext('2d');
+        const growthChart = new Chart(ctxGrowth, {
+          type: 'line',
+          data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+            datasets: [{
+              label: 'C#',
+              data: [1, 2, 4, 7, 8, 10, 12],
+              fill: false,
+              borderColor: '#FF6B6B',
+              tension: 0.1
+            },
+            {
+              label: 'Power BI',
+              data: [0, 1, 3, 4, 6, 7, 9],
+              fill: false,
+              borderColor: '#F2C811',
+              tension: 0.1
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+    </section>
+
+    <section>
       <h2>Galeria de IA</h2>
-      <p>Imagens criadas com IA, retratando a evolução tecnológica e sua influência no mundo moderno:</p>
+      <p>Imagens geradas por IA, retratando o impacto da tecnologia na sociedade e no ambiente corporativo:</p>
       <div class="gallery">
         <img src="https://source.unsplash.com/featured/?artificialintelligence" alt="IA 1" />
         <img src="https://source.unsplash.com/featured/?machinelearning" alt="IA 2" />
@@ -184,12 +252,13 @@
     </section>
 
     <section>
-      <h2>Curiosidades</h2>
+      <h2>Curiosidades sobre a Área de Software</h2>
       <ul>
-        <li>🎯 Focado em construir uma base sólida como desenvolvedor.</li>
-        <li>💡 Interesse por dados, visualização com Power BI e Machine Learning.</li>
-        <li>🌱 Sempre buscando aprender algo novo, especialmente sobre Inteligência Artificial.</li>
-        <li>🔍 Fascinado pela evolução da tecnologia e seu impacto nas empresas.</li>
+        <li>🚀 O mercado de software está evoluindo rapidamente, com grandes tendências em tecnologias como Blockchain, Inteligência Artificial, e Computação em Nuvem.</li>
+        <li>💻 O Desenvolvimento Ágil (Agile) é uma das metodologias mais adotadas no desenvolvimento de software, permitindo entregas rápidas e eficientes.</li>
+        <li>📊 Cientistas de dados estão se tornando essenciais nas empresas, utilizando grandes volumes de dados para prever tendências e otimizar processos.</li>
+        <li>🔒 A segurança cibernética é uma preocupação crescente, com o aumento de ataques cibernéticos, tornando o conhecimento sobre criptografia e segurança de rede fundamental.</li>
+        <li>🌱 A automação de testes e integração contínua (CI/CD) é cada vez mais importante para garantir a qualidade do software e a entrega de novos recursos de forma rápida e segura.</li>
       </ul>
     </section>
   </main>
